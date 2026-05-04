@@ -1,7 +1,11 @@
 [project]
 name = "phys6260-project"
 version = "0.1.0"
-description = "Add your description here"
+description = "White Dwarf Mass-Radius Relation - PHYS 6260 Term Project"
 readme = "README.md"
-requires-python = ">=3.14"
-dependencies = []
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+]
