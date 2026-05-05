@@ -11,6 +11,35 @@
 \usepackage{setspace}
 \usepackage{xcolor}
 \usepackage{caption}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{listings}
+\usepackage{color}
+
+\lstdefinestyle{pythonstyle}{
+  language=Python,
+  basicstyle=\footnotesize\ttfamily,
+  keywordstyle=\color{blue!75!black}\bfseries,
+  commentstyle=\color{green!45!black}\itshape,
+  stringstyle=\color{red!55!black},
+  numbers=left,
+  numberstyle=\tiny\color{gray!70},
+  stepnumber=5,
+  numbersep=8pt,
+  showstringspaces=false,
+  breaklines=true,
+  breakatwhitespace=false,
+  frame=tb,
+  framesep=4pt,
+  xleftmargin=22pt,
+  xrightmargin=4pt,
+  tabsize=4,
+  captionpos=b,
+  literate={--}{{-{}-}}2,
+}
+\lstset{style=pythonstyle}
+
 
 \singlespacing
 \setlength{\parskip}{0.4em}
@@ -30,7 +59,7 @@
 %% Title
 \title{\textbf{The White Dwarf Mass--Radius Relation:\\
 A Numerical Study Using the Chandrasekhar Equation of State}}
-\author{Bhaskar Jain \and Anika Chawla \and Ellen Wang \and Amita Anand\\[4pt]
+\author{Bhaskar Jain, Anika Chawla, Ellen Wang, Amita Anand\\[4pt]
         \small PHYS 6260: Computational Astrophysics\\[2pt]
         \small Spring 2026}
 \date{}
@@ -39,29 +68,6 @@ A Numerical Study Using the Chandrasekhar Equation of State}}
 \begin{document}
 \maketitle
 \thispagestyle{empty}
-
-% ============================================================
-\begin{abstract}
-\noindent
-We numerically compute the mass--radius relation for cold, non-rotating white dwarf stars
-by integrating the equations of stellar hydrostatic equilibrium coupled with the fully
-relativistic Chandrasekhar equation of state for a cold, degenerate electron gas.
-The equation of state parameters are derived analytically from first principles using
-the relativistic Fermi--Dirac pressure integral; no free parameters or literature fits
-are employed.
-We integrate the resulting system of two coupled ordinary differential equations
-using a fifth-order Runge--Kutta method with adaptive step-size control
-(Dormand--Prince RK45 \cite{dormand1980}) across a grid of 120 central densities
-spanning $\rho_c \in [10^4,\,10^{10}]\,\mathrm{g\,cm^{-3}}$.
-Our calculation recovers the Chandrasekhar mass limit
-$M_\mathrm{Ch} \approx 1.44\,M_\odot$ in good agreement with the analytic value
-$5.87/\mu_e^2\,M_\odot \approx 1.47\,M_\odot$ for a carbon--oxygen composition
-($\mu_e = 2$).
-We compare the theoretical curve to published masses and radii of six well-characterized
-white dwarfs and find generally good agreement, with residual offsets attributable to
-finite-temperature effects, Coulomb lattice corrections, and compositional gradients
-not included in our model.
-\end{abstract}
 
 % ============================================================
 \section{Introduction}
@@ -533,12 +539,33 @@ of state or full evolutionary cooling sequences \citep{althaus2010}, and could e
 the comparison to the larger, more homogeneous samples now available from
 \textit{Gaia} combined with ground-based spectroscopy.
 
-\bigskip
-\noindent\textbf{Acknowledgements.}\;
-The author thanks the course instructor for helpful discussions and for providing
-the project description.
+
+% ============================================================
+\clearpage
+\appendix
+\section{Python Source Code}
+\label{app:code}
+
+The complete, self-contained Python implementation used to produce all numerical
+results in this paper is reproduced below (\texttt{main.py}).
+The script requires Python~3.10+ with NumPy \citep{harris2020},
+SciPy \citep{virtanen2020}, and Matplotlib \citep{hunter2007}.
+It can be executed with \texttt{uv run python main.py} or
+\texttt{python main.py} inside any virtual environment with those
+packages installed.
+Outputs are a plot (\texttt{mass\_radius.png}) and a numerical
+data table (\texttt{mass\_radius.csv}).
+
+\lstinputlisting[
+  caption={Complete Python implementation (\texttt{main.py}).
+           Constants and EOS are in Section~1, the ODE system in Section~3,
+           the integration loop in \texttt{compute\_mass\_radius\_curve},
+           and the plot routine in \texttt{plot\_mass\_radius}.},
+  label={lst:main}
+]{main_listing.py}
 
 % ============================================================
 \bibliography{references}
 
 \end{document}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         

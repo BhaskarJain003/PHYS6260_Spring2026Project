@@ -5,13 +5,6 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Dormand and Prince(1980)]{dormand1980}
-J.~R. Dormand and P.~J. Prince.
-\newblock A family of embedded {Runge-Kutta} formulae.
-\newblock \emph{Journal of Computational and Applied Mathematics}, 6\penalty0
-  (1):\penalty0 19--26, 1980.
-\newblock \doi{10.1016/0771-050X(80)90013-3}.
-
 \bibitem[Fontaine et~al.(2001)Fontaine, Brassard, and Bergeron]{fontaine2001}
 G.~Fontaine, P.~Brassard, and P.~Bergeron.
 \newblock The potential of white dwarf cosmochronology.
@@ -77,6 +70,13 @@ D.~Prialnik.
 \newblock \emph{An Introduction to the Theory of Stellar Structure and
   Evolution}.
 \newblock Cambridge University Press, Cambridge, 2000.
+
+\bibitem[Dormand and Prince(1980)]{dormand1980}
+J.~R. Dormand and P.~J. Prince.
+\newblock A family of embedded {Runge-Kutta} formulae.
+\newblock \emph{Journal of Computational and Applied Mathematics}, 6\penalty0
+  (1):\penalty0 19--26, 1980.
+\newblock \doi{10.1016/0771-050X(80)90013-3}.
 
 \bibitem[Virtanen et~al.(2020)Virtanen, Gommers, Oliphant,
   et~al.]{virtanen2020}
