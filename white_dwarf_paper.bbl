@@ -1,4 +1,4 @@
-\begin{thebibliography}{16}
+\begin{thebibliography}{15}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -55,16 +55,6 @@ J.~L. Provencal, H.~L. Shipman, E.~H{\o}g, and P.~Thejll.
 \newblock \emph{Astrophysical Journal}, 494:\penalty0 759--767, 1998.
 \newblock \doi{10.1086/305238}.
 
-\bibitem[Barstow et~al.(2005)Barstow, Bond, Holberg, Burleigh, Hubeny, and
-  Koester]{barstow2005}
-M.~A. Barstow, H.~E. Bond, J.~B. Holberg, M.~R. Burleigh, I.~Hubeny, and
-  D.~Koester.
-\newblock {Hubble Space Telescope} spectroscopy of the {Balmer} lines in
-  {Sirius B}.
-\newblock \emph{Monthly Notices of the Royal Astronomical Society},
-  362:\penalty0 1134--1142, 2005.
-\newblock \doi{10.1111/j.1365-2966.2005.09365.x}.
-
 \bibitem[Prialnik(2000)]{prialnik2000}
 D.~Prialnik.
 \newblock \emph{An Introduction to the Theory of Stellar Structure and
@@ -86,6 +76,24 @@ P.~Virtanen, R.~Gommers, T.~E. Oliphant, et~al.
 \newblock \emph{Nature Methods}, 17:\penalty0 261--272, 2020.
 \newblock \doi{10.1038/s41592-019-0686-2}.
 
+\bibitem[Barstow et~al.(2005)Barstow, Bond, Holberg, Burleigh, Hubeny, and
+  Koester]{barstow2005}
+M.~A. Barstow, H.~E. Bond, J.~B. Holberg, M.~R. Burleigh, I.~Hubeny, and
+  D.~Koester.
+\newblock {Hubble Space Telescope} spectroscopy of the {Balmer} lines in
+  {Sirius B}.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  362:\penalty0 1134--1142, 2005.
+\newblock \doi{10.1111/j.1365-2966.2005.09365.x}.
+
+\bibitem[Althaus et~al.(2010)Althaus, Cors{\'i}co, Isern, and
+  Garc{\'i}a-Berro]{althaus2010}
+L.~G. Althaus, A.~H. Cors{\'i}co, J.~Isern, and E.~Garc{\'i}a-Berro.
+\newblock Evolutionary and pulsational properties of white dwarf stars.
+\newblock \emph{The Astronomy and Astrophysics Review}, 18:\penalty0 471--566,
+  2010.
+\newblock \doi{10.1007/s00159-010-0033-1}.
+
 \bibitem[Harris et~al.(2020)Harris, Millman, van~der Walt, et~al.]{harris2020}
 C.~R. Harris, K.~J. Millman, S.~J. van~der Walt, et~al.
 \newblock Array programming with {NumPy}.
@@ -98,19 +106,5 @@ J.~D. Hunter.
 \newblock \emph{Computing in Science \& Engineering}, 9\penalty0 (3):\penalty0
   90--95, 2007.
 \newblock \doi{10.1109/MCSE.2007.55}.
-
-\bibitem[Koester(2010)]{koester2010}
-D.~Koester.
-\newblock White dwarf spectra and atmosphere models.
-\newblock \emph{Memorie della Societa Astronomica Italiana}, 81:\penalty0
-  921--931, 2010.
-
-\bibitem[Althaus et~al.(2010)Althaus, Cors{\'i}co, Isern, and
-  Garc{\'i}a-Berro]{althaus2010}
-L.~G. Althaus, A.~H. Cors{\'i}co, J.~Isern, and E.~Garc{\'i}a-Berro.
-\newblock Evolutionary and pulsational properties of white dwarf stars.
-\newblock \emph{The Astronomy and Astrophysics Review}, 18:\penalty0 471--566,
-  2010.
-\newblock \doi{10.1007/s00159-010-0033-1}.
 
 \end{thebibliography}

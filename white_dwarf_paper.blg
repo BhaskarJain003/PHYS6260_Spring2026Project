@@ -3,44 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: white_dwarf_paper.aux
 The style file: unsrtnat.bst
 Database file #1: references.bib
-You've used 16 entries,
+You've used 15 entries,
             2481 wiz_defined-function locations,
-            663 strings with 6842 characters,
-and the built_in function-call counts, 6127 in all, are:
-= -- 558
-> -- 262
-< -- 10
-+ -- 108
-- -- 76
-* -- 464
-:= -- 993
-add.period$ -- 60
-call.type$ -- 16
-change.case$ -- 29
-chr.to.int$ -- 16
-cite$ -- 16
-duplicate$ -- 304
-empty$ -- 570
-format.name$ -- 98
-if$ -- 1285
+            657 strings with 6727 characters,
+and the built_in function-call counts, 5781 in all, are:
+= -- 524
+> -- 255
+< -- 9
++ -- 104
+- -- 74
+* -- 442
+:= -- 940
+add.period$ -- 57
+call.type$ -- 15
+change.case$ -- 27
+chr.to.int$ -- 15
+cite$ -- 15
+duplicate$ -- 285
+empty$ -- 533
+format.name$ -- 95
+if$ -- 1211
 int.to.chr$ -- 1
-int.to.str$ -- 17
-missing$ -- 19
-newline$ -- 100
-num.names$ -- 48
-pop$ -- 112
+int.to.str$ -- 16
+missing$ -- 18
+newline$ -- 95
+num.names$ -- 45
+pop$ -- 105
 preamble$ -- 1
-purify$ -- 16
+purify$ -- 15
 quote$ -- 0
-skip$ -- 171
+skip$ -- 160
 stack$ -- 0
-substring$ -- 345
-swap$ -- 32
+substring$ -- 318
+swap$ -- 30
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 103
+type$ -- 96
 warning$ -- 0
-while$ -- 58
+while$ -- 54
 width$ -- 0
-write$ -- 239
+write$ -- 226
